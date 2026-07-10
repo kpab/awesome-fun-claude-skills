@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(go build:*)",
+      "Bash(go vet:*)",
+      "Bash(gofmt:*)",
+      "Bash(go run ./cmd/genreadme:*)",
+      "Bash(gh search repos:*)",
+      "Bash(gh repo view:*)"
+    ]
+  }
+}
