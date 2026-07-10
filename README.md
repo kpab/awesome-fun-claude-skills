@@ -11,6 +11,7 @@ Everyone curates productivity skills. This list curates the fun ones: skills and
 - [Personas & Characters](#personas--characters)
 - [Jokes & Humor](#jokes--humor)
 - [Games & Play](#games--play)
+- [Desktop Pets & Companions](#desktop-pets--companions)
 
 ## Personas & Characters
 
@@ -28,7 +29,9 @@ Skills that turn Claude into someone (or something) else entirely.
 Skills about making, engineering, or delivering laughs.
 
 - [Joke Engineering](https://github.com/jwynia/agent-skills) ![stars](https://img.shields.io/github/stars/jwynia/agent-skills?style=flat-square) — Treats jokes as engineerable systems — diagnoses why a joke isn't landing (too obvious, too obscure, over-explained) and fixes it. Part of jwynia's agent-skills collection.
+- [Awesome Claude Spinners](https://github.com/AlexPl292/awesome-claude-spinners) ![stars](https://img.shields.io/github/stars/AlexPl292/awesome-claude-spinners?style=flat-square) — A curated list of themed spinner-verb packs that replace Claude Code's "Thinking…" with anything from LOTR quotes to "Deploying to prod on Friday…".
 - [claude-roast](https://github.com/chadbyte/claude-roast) ![stars](https://img.shields.io/github/stars/chadbyte/claude-roast?style=flat-square) — Don't let AI rot your brain — a plugin that roasts your lazy prompts with merciless comedy before they get anywhere near Claude.
+- [claude-roast (usage roast)](https://github.com/Adebesin-Cell/claude-roast) ![stars](https://img.shields.io/github/stars/Adebesin-Cell/claude-roast?style=flat-square) — The opposite of Claude Code Insights — reads your local ~/.claude history and tells you, in detail, how badly you use Claude Code. One `npx claude-roast` away.
 - [Evil Claude](https://github.com/PalmarHealer/evil-claude) ![stars](https://img.shields.io/github/stars/PalmarHealer/evil-claude?style=flat-square) — A cosmetic patcher that swaps Claude Code's spinner words for an "Evil Claude" joke set, so your loading indicator quietly plots world domination.
 
 ## Games & Play
@@ -36,7 +39,18 @@ Skills about making, engineering, or delivering laughs.
 Skills that make Claude a playmate rather than a coworker.
 
 - [Claude Code Game Master](https://github.com/Sstobo/Claude-Code-Game-Master) ![stars](https://img.shields.io/github/stars/Sstobo/Claude-Code-Game-Master?style=flat-square) — A total-conversion RPG layer for Claude Code — uses RAG and RPG ruleset APIs to run a persistent tabletop adventure set in any book or world you choose.
+- [CodeDungeon](https://github.com/guoy0701/claude-code-game-CodeDungeon) ![stars](https://img.shields.io/github/stars/guoy0701/claude-code-game-CodeDungeon?style=flat-square) — A roguelike dungeon that runs inside Claude Code — every tool call pushes you deeper, monsters like the Infinite Loop Snake attack while you code, and permadeath is real.
+
+## Desktop Pets & Companions
+
+Creatures that live on your desktop (or status line) and react to Claude at work.
+
+- [OpenPets](https://github.com/alvinunreal/openpets) ![stars](https://img.shields.io/github/stars/alvinunreal/openpets?style=flat-square) — A desktop companion platform with animated pixel pets and a first-class Claude Code integration — one command and your pet starts reacting to what Claude is doing.
 - [Claude Pet Companion](https://github.com/zzp1221/claude-code-pet) ![stars](https://img.shields.io/github/stars/zzp1221/claude-code-pet?style=flat-square) — A transparent desktop pet wired to Claude Code hooks — it animates while Claude works, bubbles up when Claude needs permission, and /pet can generate brand-new pets. *(in Chinese)*
+- [ClaudePet (macOS)](https://github.com/cchh494/claude-pet) ![stars](https://img.shields.io/github/stars/cchh494/claude-pet?style=flat-square) — A macOS desktop pet of Claude itself — click to pet it, type to feed it, and watch it switch to a friendlier tone as its affection level rises. *(in Korean)*
+- [ClaudePet (Electron)](https://github.com/liuchenlili/ClaudePet) ![stars](https://img.shields.io/github/stars/liuchenlili/ClaudePet?style=flat-square) — An Electron desktop pet fed by Claude Code's statusline and hooks — HP bar, speech bubbles, live token and cost stats, and a visual editor for custom pets. *(in Chinese)*
+- [Claude Pet (Tauri)](https://github.com/IMMINJU/claude-pet) ![stars](https://img.shields.io/github/stars/IMMINJU/claude-pet?style=flat-square) — A ~8 MB always-on-top pet that acts out what Claude Code is doing in real time — smiling on success, panicking on errors, dozing when idle.
+- [claude-petpet](https://github.com/rayhanadev/claude-petpet) ![stars](https://img.shields.io/github/stars/rayhanadev/claude-petpet?style=flat-square) — Brute-force searches account UUIDs to find your dream Claude Code buddy companion — pick species, rarity, stats, cosmetics, even a shiny.
 - [Claude Pet (claude-tamagotchi)](https://github.com/keras9496/claude-tamagotchi) ![stars](https://img.shields.io/github/stars/keras9496/claude-tamagotchi?style=flat-square) — A desktop Claw'd that feeds on your Claude Code token usage — code a lot and it happily works alongside you, neglect it for days and it gets hungry and droopy. *(in Korean)*
 - [claude-tamagotchi (statusline)](https://github.com/ncrohn/claude-tamagotchi) ![stars](https://img.shields.io/github/stars/ncrohn/claude-tamagotchi?style=flat-square) — A persistent Tamagotchi creature that lives in your Claude Code status line, with themes and hooks that react to how you work.
 

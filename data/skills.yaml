@@ -31,6 +31,9 @@ categories:
   - id: play
     name: Games & Play
     description: Skills that make Claude a playmate rather than a coworker.
+  - id: pets
+    name: Desktop Pets & Companions
+    description: Creatures that live on your desktop (or status line) and react to Claude at work.
 
 skills:
   # --- personas (stars desc) ---
@@ -91,6 +94,14 @@ skills:
     description: Treats jokes as engineerable systems — diagnoses why a joke isn't landing (too obvious, too obscure, over-explained) and fixes it. Part of jwynia's agent-skills collection.
     author: jwynia
 
+  - name: Awesome Claude Spinners
+    url: https://github.com/AlexPl292/awesome-claude-spinners
+    source: repo
+    category: jokes
+    language: en
+    description: A curated list of themed spinner-verb packs that replace Claude Code's "Thinking…" with anything from LOTR quotes to "Deploying to prod on Friday…".
+    author: AlexPl292
+
   - name: claude-roast
     url: https://github.com/chadbyte/claude-roast
     source: repo
@@ -98,6 +109,14 @@ skills:
     language: en
     description: Don't let AI rot your brain — a plugin that roasts your lazy prompts with merciless comedy before they get anywhere near Claude.
     author: chadbyte
+
+  - name: claude-roast (usage roast)
+    url: https://github.com/Adebesin-Cell/claude-roast
+    source: repo
+    category: jokes
+    language: en
+    description: The opposite of Claude Code Insights — reads your local ~/.claude history and tells you, in detail, how badly you use Claude Code. One `npx claude-roast` away.
+    author: Adebesin-Cell
 
   - name: Evil Claude
     url: https://github.com/PalmarHealer/evil-claude
@@ -116,18 +135,67 @@ skills:
     description: A total-conversion RPG layer for Claude Code — uses RAG and RPG ruleset APIs to run a persistent tabletop adventure set in any book or world you choose.
     author: Sstobo
 
+  - name: CodeDungeon
+    url: https://github.com/guoy0701/claude-code-game-CodeDungeon
+    source: repo
+    category: play
+    language: en
+    description: A roguelike dungeon that runs inside Claude Code — every tool call pushes you deeper, monsters like the Infinite Loop Snake attack while you code, and permadeath is real.
+    author: guoy0701
+
+  # --- pets (stars desc) ---
+  - name: OpenPets
+    url: https://github.com/alvinunreal/openpets
+    source: repo
+    category: pets
+    language: en
+    description: A desktop companion platform with animated pixel pets and a first-class Claude Code integration — one command and your pet starts reacting to what Claude is doing.
+    author: alvinunreal
+
   - name: Claude Pet Companion
     url: https://github.com/zzp1221/claude-code-pet
     source: repo
-    category: play
+    category: pets
     language: zh
     description: A transparent desktop pet wired to Claude Code hooks — it animates while Claude works, bubbles up when Claude needs permission, and /pet can generate brand-new pets.
     author: zzp1221
 
+  - name: ClaudePet (macOS)
+    url: https://github.com/cchh494/claude-pet
+    source: repo
+    category: pets
+    language: ko
+    description: A macOS desktop pet of Claude itself — click to pet it, type to feed it, and watch it switch to a friendlier tone as its affection level rises.
+    author: cchh494
+
+  - name: ClaudePet (Electron)
+    url: https://github.com/liuchenlili/ClaudePet
+    source: repo
+    category: pets
+    language: zh
+    description: An Electron desktop pet fed by Claude Code's statusline and hooks — HP bar, speech bubbles, live token and cost stats, and a visual editor for custom pets.
+    author: liuchenlili
+
+  - name: Claude Pet (Tauri)
+    url: https://github.com/IMMINJU/claude-pet
+    source: repo
+    category: pets
+    language: en
+    description: A ~8 MB always-on-top pet that acts out what Claude Code is doing in real time — smiling on success, panicking on errors, dozing when idle.
+    author: IMMINJU
+
+  - name: claude-petpet
+    url: https://github.com/rayhanadev/claude-petpet
+    source: repo
+    category: pets
+    language: en
+    description: Brute-force searches account UUIDs to find your dream Claude Code buddy companion — pick species, rarity, stats, cosmetics, even a shiny.
+    author: rayhanadev
+
   - name: Claude Pet (claude-tamagotchi)
     url: https://github.com/keras9496/claude-tamagotchi
     source: repo
-    category: play
+    category: pets
     language: ko
     description: A desktop Claw'd that feeds on your Claude Code token usage — code a lot and it happily works alongside you, neglect it for days and it gets hungry and droopy.
     author: keras9496
@@ -135,7 +203,7 @@ skills:
   - name: claude-tamagotchi (statusline)
     url: https://github.com/ncrohn/claude-tamagotchi
     source: repo
-    category: play
+    category: pets
     language: en
     description: A persistent Tamagotchi creature that lives in your Claude Code status line, with themes and hooks that react to how you work.
     author: ncrohn
