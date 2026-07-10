@@ -55,6 +55,8 @@
 - 日本語版 README(README.ja.md)の併設
 
 ## 未定事項
-- カテゴリ体系の確定(persona / joke / game / meme 等 — 収集しながら決める)
-- リポジトリ名の最終確定(awesome-fun-claude-skills 仮。awesome-lint 準拠にするかも含め M2 で判断)
 - 自作スキルの同梱方法(リポジトリ内に置くか、別リポジトリ参照か)
+
+## 確定済み(元・未定事項)
+- カテゴリ体系: personas / jokes / play / pets の4カテゴリ(2026-07 /collect 2周目でペット系が最大勢力となり pets を分離)
+- リポジトリ名: `awesome-fun-claude-skills` で確定(2026-07-10)。「awesome claude skills」系は激戦区だが fun 枠は競合ゼロ。awesome / fun / claude / skills の4キーワードを自然な語順で含み、awesome-lint の命名規則にも準拠
