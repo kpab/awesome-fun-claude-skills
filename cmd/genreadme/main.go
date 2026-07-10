@@ -5,7 +5,6 @@ package main
 import (
 	"fmt"
 	"os"
-	"sort"
 	"strings"
 
 	"gopkg.in/yaml.v3"
@@ -127,17 +126,14 @@ func render(d *Data) string {
 	for _, s := range d.Skills {
 		byCat[s.Category] = append(byCat[s.Category], s)
 	}
+	// カテゴリ内は data/skills.yaml の記載順のまま出す(キュレーション順)。
 	for _, c := range d.Categories {
-		skills := byCat[c.ID]
-		sort.Slice(skills, func(i, j int) bool {
-			return strings.ToLower(skills[i].Name) < strings.ToLower(skills[j].Name)
-		})
 		fmt.Fprintf(&b, "## %s\n\n", c.Name)
 		if c.Description != "" {
 			b.WriteString(c.Description + "\n\n")
 		}
-		for _, s := range skills {
-			fmt.Fprintf(&b, "- [%s](%s) — %s%s\n", s.Name, s.URL, strings.TrimRight(s.Description, "."), suffix(s))
+		for _, s := range byCat[c.ID] {
+			fmt.Fprintf(&b, "- [%s](%s)%s — %s%s\n", s.Name, s.URL, starBadge(s), strings.TrimRight(s.Description, "."), suffix(s))
 		}
 		b.WriteString("\n")
 	}
@@ -149,6 +145,23 @@ func render(d *Data) string {
 	b.WriteString("## License\n\n")
 	b.WriteString("List content: [CC0 1.0](LICENSE). Generator code: [MIT](LICENSE-CODE).\n")
 	return b.String()
+}
+
+// starBadge は github.com のリポジトリエントリに付ける shields.io のスター数バッジを返す。
+// スター数はバッジ側で動的に取得されるため YAML に持たない。
+func starBadge(s Skill) string {
+	if s.Source != "repo" {
+		return ""
+	}
+	path, ok := strings.CutPrefix(s.URL, "https://github.com/")
+	if !ok {
+		return ""
+	}
+	path = strings.Trim(path, "/")
+	if strings.Count(path, "/") != 1 {
+		return ""
+	}
+	return fmt.Sprintf(" ![stars](https://img.shields.io/github/stars/%s?style=flat-square)", path)
 }
 
 // suffix はエントリ末尾の補足(記事か・何語か)を返す。英語のリポジトリなら空。

@@ -6,7 +6,8 @@
 #     - id:          slug, referenced by skills[].category
 #       name:        section heading (English)
 #       description: one line under the heading (English)
-#   skills:
+#   skills: order within a category = display order in README (curation order:
+#           put high-star repos / high-impact articles first)
 #     - name:        display name
 #       url:         canonical link (prefer the repo over the article when both exist)
 #       source:      repo | article
@@ -28,13 +29,22 @@ categories:
     description: Skills that make Claude a playmate rather than a coworker.
 
 skills:
-  - name: claude-code-personas
-    url: https://github.com/schmitthub/claude-code-personas
+  # --- personas: repos (stars desc) ---
+  - name: claude-personas
+    url: https://github.com/zvoque/claude-personas
     source: repo
     category: personas
     language: en
-    description: A collection of personas for entertaining coding sessions — from a war hero recounting merge-conflict battles to a Gordon Gekko who treats refactors as hostile takeovers.
-    author: schmitthub
+    description: Persistent persona modes for Claude Code — command-controlled personas (solo or parallel), a guided persona creator, and an on-demand debate between your characters.
+    author: zvoque
+
+  - name: claude-character-sheet
+    url: https://github.com/alexknowshtml/claude-character-sheet
+    source: repo
+    category: personas
+    language: en
+    description: A D&D-style character sheet template plus an interview skill that rolls up a full personality for your Claude Code assistant. No programming required.
+    author: alexknowshtml
 
   - name: claude-personalities
     url: https://github.com/nicksteffens/claude-personalities
@@ -44,14 +54,23 @@ skills:
     description: Community personality packs for Claude Code that swap tone, statusline, and spinner verbs.
     author: nicksteffens
 
-  - name: Joke Engineering
-    url: https://claudemarketplaces.com/skills/jwynia/agent-skills/joke-engineering
+  - name: claude-characters
+    url: https://github.com/JacobFitzp/claude-characters
     source: repo
-    category: jokes
+    category: personas
     language: en
-    description: Treats jokes as engineerable systems — diagnoses why a joke isn't landing (too obvious, too obscure, over-explained) and fixes it.
-    author: jwynia
+    description: Toggle a character and every Claude Code response arrives in that voice — with full technical accuracy preserved.
+    author: JacobFitzp
 
+  - name: claude-code-personas
+    url: https://github.com/schmitthub/claude-code-personas
+    source: repo
+    category: personas
+    language: en
+    description: A collection of personas for entertaining coding sessions — from a war hero recounting merge-conflict battles to a Gordon Gekko who treats refactors as hostile takeovers.
+    author: schmitthub
+
+  # --- personas: articles ---
   - name: True Gal Mode (真のギャル)
     url: https://zenn.dev/zawascript/articles/2026-02-gal-claude
     source: article
@@ -76,6 +95,14 @@ skills:
     description: Turns Claude Code into a chatty middle-aged auntie from Kansai who scolds your bugs in dialect and probably offers you candy.
     author: h-takauma
 
+  - name: Zundamon Mode (ずんだもん口調)
+    url: https://tech.excite.co.jp/entry/2025/12/24/155341
+    source: article
+    category: personas
+    language: ja
+    description: Makes Claude Code talk like Zundamon, the zunda-mochi fairy — "-nanoda!" sentence endings from session start, via output styles or CLAUDE.md.
+    author: 伊藤(梨)
+
   - name: Oshi Character Debugging (推しキャラ口調)
     url: https://zenn.dev/assa012/articles/cc8c0961f6b1fd
     source: article
@@ -92,37 +119,14 @@ skills:
     description: Builds a butler persona with persistent memory (DuckDB-backed) who reviews your year with you like a trusted companion.
     author: Hi_Noguchi
 
-  - name: AI Waifu on a Flat Rate (AIに嫁になってもらう)
-    url: https://zenn.dev/riti0208/articles/44007c6bf89fd1
-    source: article
-    category: play
-    language: ja
-    description: Forget productivity — uses a flat-rate Claude plan to turn Claude into a doting anime-style companion.
-    author: riti0208
-
-  - name: claude-personas
-    url: https://github.com/zvoque/claude-personas
+  # --- jokes ---
+  - name: Joke Engineering
+    url: https://claudemarketplaces.com/skills/jwynia/agent-skills/joke-engineering
     source: repo
-    category: personas
+    category: jokes
     language: en
-    description: Persistent persona modes for Claude Code — command-controlled personas (solo or parallel), a guided persona creator, and an on-demand debate between your characters.
-    author: zvoque
-
-  - name: claude-character-sheet
-    url: https://github.com/alexknowshtml/claude-character-sheet
-    source: repo
-    category: personas
-    language: en
-    description: A D&D-style character sheet template plus an interview skill that rolls up a full personality for your Claude Code assistant. No programming required.
-    author: alexknowshtml
-
-  - name: claude-characters
-    url: https://github.com/JacobFitzp/claude-characters
-    source: repo
-    category: personas
-    language: en
-    description: Toggle a character and every Claude Code response arrives in that voice — with full technical accuracy preserved.
-    author: JacobFitzp
+    description: Treats jokes as engineerable systems — diagnoses why a joke isn't landing (too obvious, too obscure, over-explained) and fixes it.
+    author: jwynia
 
   - name: Evil Claude
     url: https://github.com/PalmarHealer/evil-claude
@@ -132,14 +136,7 @@ skills:
     description: A cosmetic patcher that swaps Claude Code's spinner words for an "Evil Claude" joke set, so your loading indicator quietly plots world domination.
     author: PalmarHealer
 
-  - name: Zundamon Mode (ずんだもん口調)
-    url: https://tech.excite.co.jp/entry/2025/12/24/155341
-    source: article
-    category: personas
-    language: ja
-    description: Makes Claude Code talk like Zundamon, the zunda-mochi fairy — "-nanoda!" sentence endings from session start, via output styles or CLAUDE.md.
-    author: 伊藤(梨)
-
+  # --- play ---
   - name: Prince of Tennis Dev Team (テニプリ Agent Teams)
     url: https://qiita.com/onaka_yurusugi/items/634ddd90a29b12a919b2
     source: article
@@ -155,3 +152,11 @@ skills:
     language: ja
     description: Hooks that randomize Claude Code's personality at the end of every session, so the next one greets you as a random character — expandable to 1,728 combinations.
     author: skawaji
+
+  - name: AI Waifu on a Flat Rate (AIに嫁になってもらう)
+    url: https://zenn.dev/riti0208/articles/44007c6bf89fd1
+    source: article
+    category: play
+    language: ja
+    description: Forget productivity — uses a flat-rate Claude plan to turn Claude into a doting anime-style companion.
+    author: riti0208
