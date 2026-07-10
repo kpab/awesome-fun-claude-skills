@@ -1,0 +1,47 @@
+name: Suggest a skill
+description: Suggest a fun Claude skill to add to the list (no PR required)
+title: "[Suggestion]: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! If you'd rather open a PR yourself, see [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md).
+  - type: input
+    id: url
+    attributes:
+      label: GitHub repository URL
+      description: Only GitHub repos are listed (no article-only skills).
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: textarea
+    id: why-fun
+    attributes:
+      label: What makes it fun?
+      description: Personas, jokes, games, desktop pets, vibes — tell us why it belongs on a fun-first list.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested category
+      options:
+        - personas
+        - jokes
+        - play
+        - pets
+        - other / new category
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: This is a fun/entertainment skill, not a productivity tool
+          required: true
+        - label: The repo has real content (SKILL.md, plugin structure, or working code)
+          required: true
+        - label: I searched the list and it's not already there
+          required: true
