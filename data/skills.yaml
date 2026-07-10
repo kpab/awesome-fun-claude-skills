@@ -99,3 +99,59 @@ skills:
     language: ja
     description: Forget productivity — uses a flat-rate Claude plan to turn Claude into a doting anime-style companion.
     author: riti0208
+
+  - name: claude-personas
+    url: https://github.com/zvoque/claude-personas
+    source: repo
+    category: personas
+    language: en
+    description: Persistent persona modes for Claude Code — command-controlled personas (solo or parallel), a guided persona creator, and an on-demand debate between your characters.
+    author: zvoque
+
+  - name: claude-character-sheet
+    url: https://github.com/alexknowshtml/claude-character-sheet
+    source: repo
+    category: personas
+    language: en
+    description: A D&D-style character sheet template plus an interview skill that rolls up a full personality for your Claude Code assistant. No programming required.
+    author: alexknowshtml
+
+  - name: claude-characters
+    url: https://github.com/JacobFitzp/claude-characters
+    source: repo
+    category: personas
+    language: en
+    description: Toggle a character and every Claude Code response arrives in that voice — with full technical accuracy preserved.
+    author: JacobFitzp
+
+  - name: Evil Claude
+    url: https://github.com/PalmarHealer/evil-claude
+    source: repo
+    category: jokes
+    language: en
+    description: A cosmetic patcher that swaps Claude Code's spinner words for an "Evil Claude" joke set, so your loading indicator quietly plots world domination.
+    author: PalmarHealer
+
+  - name: Zundamon Mode (ずんだもん口調)
+    url: https://tech.excite.co.jp/entry/2025/12/24/155341
+    source: article
+    category: personas
+    language: ja
+    description: Makes Claude Code talk like Zundamon, the zunda-mochi fairy — "-nanoda!" sentence endings from session start, via output styles or CLAUDE.md.
+    author: 伊藤(梨)
+
+  - name: Prince of Tennis Dev Team (テニプリ Agent Teams)
+    url: https://qiita.com/onaka_yurusugi/items/634ddd90a29b12a919b2
+    source: article
+    category: play
+    language: ja
+    description: Staffs Claude Code's Agent Teams with Prince of Tennis characters — Atobe leads, Kabaji implements, Inui tests — turning dev logs into character-banter fan fiction. Full prompts included.
+    author: onaka_yurusugi
+
+  - name: Session Personality Gacha (セッションごと口調ガチャ)
+    url: https://qiita.com/skawaji/items/a87dac2970195a789b1f
+    source: article
+    category: play
+    language: ja
+    description: Hooks that randomize Claude Code's personality at the end of every session, so the next one greets you as a random character — expandable to 1,728 combinations.
+    author: skawaji
