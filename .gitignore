@@ -1,0 +1,10 @@
+# Go
+/genreadme
+*.exe
+
+# OS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/

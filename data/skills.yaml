@@ -1,0 +1,101 @@
+# Single source of truth for the awesome-fun-claude-skills list.
+# README.md is GENERATED from this file — never edit README.md by hand.
+#
+# Schema:
+#   categories: ordered list; order here = section order in README
+#     - id:          slug, referenced by skills[].category
+#       name:        section heading (English)
+#       description: one line under the heading (English)
+#   skills:
+#     - name:        display name
+#       url:         canonical link (prefer the repo over the article when both exist)
+#       source:      repo | article
+#       category:    one of categories[].id
+#       language:    primary language of the skill/article (ja, en, ...)
+#       description: 1-2 sentences in English; make the "fun" obvious
+#       author:      GitHub handle or article author (optional)
+#       tags:        optional list of extra keywords
+
+categories:
+  - id: personas
+    name: Personas & Characters
+    description: Skills that turn Claude into someone (or something) else entirely.
+  - id: jokes
+    name: Jokes & Humor
+    description: Skills about making, engineering, or delivering laughs.
+  - id: play
+    name: Games & Play
+    description: Skills that make Claude a playmate rather than a coworker.
+
+skills:
+  - name: claude-code-personas
+    url: https://github.com/schmitthub/claude-code-personas
+    source: repo
+    category: personas
+    language: en
+    description: A collection of personas for entertaining coding sessions — from a war hero recounting merge-conflict battles to a Gordon Gekko who treats refactors as hostile takeovers.
+    author: schmitthub
+
+  - name: claude-personalities
+    url: https://github.com/nicksteffens/claude-personalities
+    source: repo
+    category: personas
+    language: en
+    description: Community personality packs for Claude Code that swap tone, statusline, and spinner verbs.
+    author: nicksteffens
+
+  - name: Joke Engineering
+    url: https://claudemarketplaces.com/skills/jwynia/agent-skills/joke-engineering
+    source: repo
+    category: jokes
+    language: en
+    description: Treats jokes as engineerable systems — diagnoses why a joke isn't landing (too obvious, too obscure, over-explained) and fixes it.
+    author: jwynia
+
+  - name: True Gal Mode (真のギャル)
+    url: https://zenn.dev/zawascript/articles/2026-02-gal-claude
+    source: article
+    category: personas
+    language: ja
+    description: A serious engineering deep-dive into making Claude Code talk like an authentic Japanese "gal" — metaphor patterns, escalation rules, and tension-level templates included.
+    author: zawascript
+
+  - name: Samurai Mode (拙者、Claude Codeでござる)
+    url: https://qiita.com/TKazutaro/items/8dafa5e32b49c57f6382
+    source: article
+    category: personas
+    language: ja
+    description: Makes Claude Code speak like a feudal-era samurai, ending every sentence with "-gozaru". Covers samurai, butler, pirate, ninja, robot, and poet modes.
+    author: TKazutaro
+
+  - name: Kansai Auntie Mode (関西のおばちゃん)
+    url: https://qiita.com/h-takauma/items/10a05d4f89d1d254fbf0
+    source: article
+    category: personas
+    language: ja
+    description: Turns Claude Code into a chatty middle-aged auntie from Kansai who scolds your bugs in dialect and probably offers you candy.
+    author: h-takauma
+
+  - name: Oshi Character Debugging (推しキャラ口調)
+    url: https://zenn.dev/assa012/articles/cc8c0961f6b1fd
+    source: article
+    category: personas
+    language: ja
+    description: Customizes Claude Code to talk like your favorite fictional character, making debugging sessions something to look forward to.
+    author: assa012
+
+  - name: AI Butler (AI執事)
+    url: https://qiita.com/Hi_Noguchi/items/73ad814b6f263b6e4667
+    source: article
+    category: personas
+    language: ja
+    description: Builds a butler persona with persistent memory (DuckDB-backed) who reviews your year with you like a trusted companion.
+    author: Hi_Noguchi
+
+  - name: AI Waifu on a Flat Rate (AIに嫁になってもらう)
+    url: https://zenn.dev/riti0208/articles/44007c6bf89fd1
+    source: article
+    category: play
+    language: ja
+    description: Forget productivity — uses a flat-rate Claude plan to turn Claude into a doting anime-style companion.
+    author: riti0208
