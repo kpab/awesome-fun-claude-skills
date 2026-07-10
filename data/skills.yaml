@@ -1,20 +1,24 @@
 # Single source of truth for the awesome-fun-claude-skills list.
 # README.md is GENERATED from this file — never edit README.md by hand.
 #
+# Listing policy: GitHub repos only (skills / plugins / Claude Code-integrated toys).
+# Article-only skills (Zenn/Qiita/blogs) are NOT listed — if an article has a repo,
+# link the repo. Quality first: stars, reproducibility, and how fun it is.
+#
 # Schema:
 #   categories: ordered list; order here = section order in README
 #     - id:          slug, referenced by skills[].category
 #       name:        section heading (English)
 #       description: one line under the heading (English)
 #   skills: order within a category = display order in README (curation order:
-#           put high-star repos / high-impact articles first)
+#           high-star / high-quality first)
 #     - name:        display name
-#       url:         canonical link (prefer the repo over the article when both exist)
-#       source:      repo | article
+#       url:         GitHub repository URL
+#       source:      repo
 #       category:    one of categories[].id
-#       language:    primary language of the skill/article (ja, en, ...)
+#       language:    primary language of the repo/README (en, ja, zh, ko, ...)
 #       description: 1-2 sentences in English; make the "fun" obvious
-#       author:      GitHub handle or article author (optional)
+#       author:      GitHub handle (optional)
 #       tags:        optional list of extra keywords
 
 categories:
@@ -29,7 +33,7 @@ categories:
     description: Skills that make Claude a playmate rather than a coworker.
 
 skills:
-  # --- personas: repos (stars desc) ---
+  # --- personas (stars desc) ---
   - name: claude-personas
     url: https://github.com/zvoque/claude-personas
     source: repo
@@ -54,6 +58,14 @@ skills:
     description: Community personality packs for Claude Code that swap tone, statusline, and spinner verbs.
     author: nicksteffens
 
+  - name: claude-personality-gen
+    url: https://github.com/AlexTrebs/claude-personality-gen
+    source: repo
+    category: personas
+    language: en
+    description: Generates a fresh personality for your Claude assistant every day from current news headlines, injected automatically into every session.
+    author: AlexTrebs
+
   - name: claude-characters
     url: https://github.com/JacobFitzp/claude-characters
     source: repo
@@ -70,63 +82,22 @@ skills:
     description: A collection of personas for entertaining coding sessions — from a war hero recounting merge-conflict battles to a Gordon Gekko who treats refactors as hostile takeovers.
     author: schmitthub
 
-  # --- personas: articles ---
-  - name: True Gal Mode (真のギャル)
-    url: https://zenn.dev/zawascript/articles/2026-02-gal-claude
-    source: article
-    category: personas
-    language: ja
-    description: A serious engineering deep-dive into making Claude Code talk like an authentic Japanese "gal" — metaphor patterns, escalation rules, and tension-level templates included.
-    author: zawascript
-
-  - name: Samurai Mode (拙者、Claude Codeでござる)
-    url: https://qiita.com/TKazutaro/items/8dafa5e32b49c57f6382
-    source: article
-    category: personas
-    language: ja
-    description: Makes Claude Code speak like a feudal-era samurai, ending every sentence with "-gozaru". Covers samurai, butler, pirate, ninja, robot, and poet modes.
-    author: TKazutaro
-
-  - name: Kansai Auntie Mode (関西のおばちゃん)
-    url: https://qiita.com/h-takauma/items/10a05d4f89d1d254fbf0
-    source: article
-    category: personas
-    language: ja
-    description: Turns Claude Code into a chatty middle-aged auntie from Kansai who scolds your bugs in dialect and probably offers you candy.
-    author: h-takauma
-
-  - name: Zundamon Mode (ずんだもん口調)
-    url: https://tech.excite.co.jp/entry/2025/12/24/155341
-    source: article
-    category: personas
-    language: ja
-    description: Makes Claude Code talk like Zundamon, the zunda-mochi fairy — "-nanoda!" sentence endings from session start, via output styles or CLAUDE.md.
-    author: 伊藤(梨)
-
-  - name: Oshi Character Debugging (推しキャラ口調)
-    url: https://zenn.dev/assa012/articles/cc8c0961f6b1fd
-    source: article
-    category: personas
-    language: ja
-    description: Customizes Claude Code to talk like your favorite fictional character, making debugging sessions something to look forward to.
-    author: assa012
-
-  - name: AI Butler (AI執事)
-    url: https://qiita.com/Hi_Noguchi/items/73ad814b6f263b6e4667
-    source: article
-    category: personas
-    language: ja
-    description: Builds a butler persona with persistent memory (DuckDB-backed) who reviews your year with you like a trusted companion.
-    author: Hi_Noguchi
-
-  # --- jokes ---
+  # --- jokes (stars desc) ---
   - name: Joke Engineering
-    url: https://claudemarketplaces.com/skills/jwynia/agent-skills/joke-engineering
+    url: https://github.com/jwynia/agent-skills
     source: repo
     category: jokes
     language: en
-    description: Treats jokes as engineerable systems — diagnoses why a joke isn't landing (too obvious, too obscure, over-explained) and fixes it.
+    description: Treats jokes as engineerable systems — diagnoses why a joke isn't landing (too obvious, too obscure, over-explained) and fixes it. Part of jwynia's agent-skills collection.
     author: jwynia
+
+  - name: claude-roast
+    url: https://github.com/chadbyte/claude-roast
+    source: repo
+    category: jokes
+    language: en
+    description: Don't let AI rot your brain — a plugin that roasts your lazy prompts with merciless comedy before they get anywhere near Claude.
+    author: chadbyte
 
   - name: Evil Claude
     url: https://github.com/PalmarHealer/evil-claude
@@ -136,27 +107,35 @@ skills:
     description: A cosmetic patcher that swaps Claude Code's spinner words for an "Evil Claude" joke set, so your loading indicator quietly plots world domination.
     author: PalmarHealer
 
-  # --- play ---
-  - name: Prince of Tennis Dev Team (テニプリ Agent Teams)
-    url: https://qiita.com/onaka_yurusugi/items/634ddd90a29b12a919b2
-    source: article
+  # --- play (stars desc) ---
+  - name: Claude Code Game Master
+    url: https://github.com/Sstobo/Claude-Code-Game-Master
+    source: repo
     category: play
-    language: ja
-    description: Staffs Claude Code's Agent Teams with Prince of Tennis characters — Atobe leads, Kabaji implements, Inui tests — turning dev logs into character-banter fan fiction. Full prompts included.
-    author: onaka_yurusugi
+    language: en
+    description: A total-conversion RPG layer for Claude Code — uses RAG and RPG ruleset APIs to run a persistent tabletop adventure set in any book or world you choose.
+    author: Sstobo
 
-  - name: Session Personality Gacha (セッションごと口調ガチャ)
-    url: https://qiita.com/skawaji/items/a87dac2970195a789b1f
-    source: article
+  - name: Claude Pet Companion
+    url: https://github.com/zzp1221/claude-code-pet
+    source: repo
     category: play
-    language: ja
-    description: Hooks that randomize Claude Code's personality at the end of every session, so the next one greets you as a random character — expandable to 1,728 combinations.
-    author: skawaji
+    language: zh
+    description: A transparent desktop pet wired to Claude Code hooks — it animates while Claude works, bubbles up when Claude needs permission, and /pet can generate brand-new pets.
+    author: zzp1221
 
-  - name: AI Waifu on a Flat Rate (AIに嫁になってもらう)
-    url: https://zenn.dev/riti0208/articles/44007c6bf89fd1
-    source: article
+  - name: Claude Pet (claude-tamagotchi)
+    url: https://github.com/keras9496/claude-tamagotchi
+    source: repo
     category: play
-    language: ja
-    description: Forget productivity — uses a flat-rate Claude plan to turn Claude into a doting anime-style companion.
-    author: riti0208
+    language: ko
+    description: A desktop Claw'd that feeds on your Claude Code token usage — code a lot and it happily works alongside you, neglect it for days and it gets hungry and droopy.
+    author: keras9496
+
+  - name: claude-tamagotchi (statusline)
+    url: https://github.com/ncrohn/claude-tamagotchi
+    source: repo
+    category: play
+    language: en
+    description: A persistent Tamagotchi creature that lives in your Claude Code status line, with themes and hooks that react to how you work.
+    author: ncrohn

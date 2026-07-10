@@ -114,7 +114,7 @@ func render(d *Data) string {
 	b.WriteString("<!-- THIS FILE IS GENERATED from data/skills.yaml — do not edit by hand. -->\n\n")
 	b.WriteString("# Awesome Fun Claude Skills\n\n")
 	b.WriteString("> A curated list of fun, entertaining, and joke Claude Code skills — personas, humor, and play.\n\n")
-	b.WriteString("Everyone curates productivity skills. This list curates the fun ones: skills that turn Claude into a samurai, a Kansai auntie, a gal, a butler — or just make you laugh.\n\n")
+	b.WriteString("Everyone curates productivity skills. This list curates the fun ones: skills and plugins that turn Claude Code into a tabletop game master, a desk pet, or your most merciless roast comedian.\n\n")
 
 	b.WriteString("## Contents\n\n")
 	for _, c := range d.Categories {
@@ -187,6 +187,8 @@ func langName(code string) string {
 		return "Japanese"
 	case "zh":
 		return "Chinese"
+	case "ko":
+		return "Korean"
 	default:
 		return code
 	}
