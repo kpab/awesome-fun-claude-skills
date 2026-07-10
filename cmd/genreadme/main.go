@@ -139,7 +139,7 @@ func render(d *Data) string {
 	}
 
 	b.WriteString("## Contributing\n\n")
-	b.WriteString("Edit [`data/skills.yaml`](data/skills.yaml) (not this file) and regenerate:\n\n")
+	b.WriteString("Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). TL;DR: edit [`data/skills.yaml`](data/skills.yaml) (not this file) and regenerate:\n\n")
 	b.WriteString("```sh\ngo run ./cmd/genreadme\n```\n\n")
 	b.WriteString("Submissions must be fun-first — personas, jokes, games, vibes. Productivity skills belong in the other awesome lists.\n\n")
 	b.WriteString("## License\n\n")

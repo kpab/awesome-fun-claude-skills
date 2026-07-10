@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    name: Validate YAML & README freshness
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      # genreadme が YAML の検証(必須項目・カテゴリ参照・URL重複・未知フィールド)も兼ねる
+      - name: Validate skills.yaml and regenerate README
+        run: go run ./cmd/genreadme
+
+      - name: Check README.md is up to date
+        run: |
+          if ! git diff --exit-code README.md; then
+            echo "::error file=README.md::README.md is out of date. Run 'go run ./cmd/genreadme' and commit the result."
+            exit 1
+          fi

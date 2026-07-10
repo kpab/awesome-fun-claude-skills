@@ -56,7 +56,7 @@ Creatures that live on your desktop (or status line) and react to Claude at work
 
 ## Contributing
 
-Edit [`data/skills.yaml`](data/skills.yaml) (not this file) and regenerate:
+Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). TL;DR: edit [`data/skills.yaml`](data/skills.yaml) (not this file) and regenerate:
 
 ```sh
 go run ./cmd/genreadme
