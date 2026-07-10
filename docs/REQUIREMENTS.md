@@ -42,8 +42,8 @@
 ## マイルストーン
 
 - **M1(最小の動くもの)**: YAML スキーマ確定+生成スクリプトが動き、手元の素材(調査で見つけた約10件+自作2件)を載せた README が生成される
-  - [ ] genreadme を実装する(yaml.v3 でパース → カテゴリ別に README 生成。category 参照切れ・URL 重複・必須欠落はエラー)
-  - [ ] `go run ./cmd/genreadme` で README.md が生成され、プレースホルダが置き換わることを確認する
+  - [x] genreadme を実装する(yaml.v3 でパース → カテゴリ別に README 生成。category 参照切れ・URL 重複・必須欠落はエラー)
+  - [x] `go run ./cmd/genreadme` で README.md が生成され、プレースホルダが置き換わることを確認する
   - [ ] 自作スキル2件(博多弁ギャル・知的ギャル)の公開方法を決めて掲載する(同梱 or 別リポジトリ)
   - [ ] /collect を1周回して掲載を 15 件程度まで増やす
 - **M2(初回公開)**: 掲載 20〜30 件に拡充、カテゴリ整備、CONTRIBUTING.md、CI 整備、public 公開
