@@ -69,22 +69,6 @@ skills:
     description: Generates a fresh personality for your Claude assistant every day from current news headlines, injected automatically into every session.
     author: AlexTrebs
 
-  - name: claude-characters
-    url: https://github.com/JacobFitzp/claude-characters
-    source: repo
-    category: personas
-    language: en
-    description: Toggle a character and every Claude Code response arrives in that voice — with full technical accuracy preserved.
-    author: JacobFitzp
-
-  - name: claude-code-personas
-    url: https://github.com/schmitthub/claude-code-personas
-    source: repo
-    category: personas
-    language: en
-    description: A collection of personas for entertaining coding sessions — from a war hero recounting merge-conflict battles to a Gordon Gekko who treats refactors as hostile takeovers.
-    author: schmitthub
-
   # --- jokes (stars desc) ---
   - name: Joke Engineering
     url: https://github.com/jwynia/agent-skills
@@ -110,22 +94,6 @@ skills:
     description: Don't let AI rot your brain — a plugin that roasts your lazy prompts with merciless comedy before they get anywhere near Claude.
     author: chadbyte
 
-  - name: claude-roast (usage roast)
-    url: https://github.com/Adebesin-Cell/claude-roast
-    source: repo
-    category: jokes
-    language: en
-    description: The opposite of Claude Code Insights — reads your local ~/.claude history and tells you, in detail, how badly you use Claude Code. One `npx claude-roast` away.
-    author: Adebesin-Cell
-
-  - name: Evil Claude
-    url: https://github.com/PalmarHealer/evil-claude
-    source: repo
-    category: jokes
-    language: en
-    description: A cosmetic patcher that swaps Claude Code's spinner words for an "Evil Claude" joke set, so your loading indicator quietly plots world domination.
-    author: PalmarHealer
-
   # --- play (stars desc) ---
   - name: Claude Code Game Master
     url: https://github.com/Sstobo/Claude-Code-Game-Master
@@ -134,14 +102,6 @@ skills:
     language: en
     description: A total-conversion RPG layer for Claude Code — uses RAG and RPG ruleset APIs to run a persistent tabletop adventure set in any book or world you choose.
     author: Sstobo
-
-  - name: CodeDungeon
-    url: https://github.com/guoy0701/claude-code-game-CodeDungeon
-    source: repo
-    category: play
-    language: en
-    description: A roguelike dungeon that runs inside Claude Code — every tool call pushes you deeper, monsters like the Infinite Loop Snake attack while you code, and permadeath is real.
-    author: guoy0701
 
   # --- pets (stars desc) ---
   - name: OpenPets
@@ -199,11 +159,3 @@ skills:
     language: ko
     description: A desktop Claw'd that feeds on your Claude Code token usage — code a lot and it happily works alongside you, neglect it for days and it gets hungry and droopy.
     author: keras9496
-
-  - name: claude-tamagotchi (statusline)
-    url: https://github.com/ncrohn/claude-tamagotchi
-    source: repo
-    category: pets
-    language: en
-    description: A persistent Tamagotchi creature that lives in your Claude Code status line, with themes and hooks that react to how you work.
-    author: ncrohn
